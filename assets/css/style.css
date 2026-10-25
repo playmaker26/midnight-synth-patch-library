@@ -1,0 +1,15 @@
+:root {
+  /*Color*/
+
+  --primary-color: #00040d;
+  --secondary-color: #f1f5f9;
+  --accent-color: #00f0ff;
+  --hover-color: #80f8ff;
+
+  /*Typography*/
+
+  --header-typography: "Space Grotesk";
+  --body-typography: "Fira Code";
+
+  /*Desktop Font Size*/
+}
