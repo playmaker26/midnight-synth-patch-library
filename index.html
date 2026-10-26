@@ -118,8 +118,8 @@
         <header class="search__sub-header">
           <h1>Presets on demand</h1>
           <form class="search__search-patch" id="search-patch" method="post">
+            <label for="patch-search">Search synth patches</label>
             <fieldset>
-              <label for="patch-search">Search synth patches</label>
               <input
                 type="search"
                 id="patch-search"
@@ -163,8 +163,8 @@
           </form>
         </header>
         <form class="search__filter-form" id="filter" method="get">
+          <label for="filter-synths">Filter by specific synths</label>
           <fieldset class="search__filter-synths">
-            <label for="filter-synths">Filter by specific synths</label>
             <select name="synths" id="filter-synths">
               <option value="select">Select</option>
               <option value="none">None</option>
@@ -173,19 +173,21 @@
               <option value="prophet-5">Prophet-5</option>
             </select>
           </fieldset>
-          <fieldset class="search__filter-sound">
-            <label for="filter-sounds">Filter by sound characteristics</label>
-            <select name="sounds" id="filter-sounds">
-              <option value="select">Select</option>
-              <option value="none">None</option>
-              <option value="leads">Leads</option>
-              <option value="pads">Pads</option>
-              <option value="bass">Bass</option>
-              <option value="plucks">Plucks</option>
-            </select>
-          </fieldset>
+        </form>
+        <form action="">
+          <label for="filter-sounds">Filter by sound characteristics</label>
+          <select name="sounds" id="filter-sounds">
+            <option value="select">Select</option>
+            <option value="none">None</option>
+            <option value="leads">Leads</option>
+            <option value="pads">Pads</option>
+            <option value="bass">Bass</option>
+            <option value="plucks">Plucks</option>
+          </select>
+        </form>
+        <form action="">
+          <legend>Format</legend>
           <fieldset class="search__format">
-            <legend>Format</legend>
             <input type="radio" id="all" name="format" /><label for="all"
               >All</label
             >
@@ -198,6 +200,8 @@
               >Wavetables</label
             >
           </fieldset>
+        </form>
+        <form action="">
           <fieldset class="search__price">
             <legend>Price</legend>
             <input type="radio" id="free" name="price" /><label for="free"
