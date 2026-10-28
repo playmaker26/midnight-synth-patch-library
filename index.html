@@ -164,17 +164,15 @@
         </header>
         <form class="search__filter-form" id="filter" method="get">
           <label for="filter-synths">Filter by specific synths</label>
-          <fieldset class="search__filter-synths">
-            <select name="synths" id="filter-synths">
-              <option value="select">Select</option>
-              <option value="none">None</option>
-              <option value="serum">Serum</option>
-              <option value="massive">Massive</option>
-              <option value="prophet-5">Prophet-5</option>
-            </select>
-          </fieldset>
+          <select name="synths" id="filter-synths">
+            <option value="select">Select</option>
+            <option value="none">None</option>
+            <option value="serum">Serum</option>
+            <option value="massive">Massive</option>
+            <option value="prophet-5">Prophet-5</option>
+          </select>
         </form>
-        <form action="">
+        <form class="search__sound">
           <label for="filter-sounds">Filter by sound characteristics</label>
           <select name="sounds" id="filter-sounds">
             <option value="select">Select</option>
@@ -185,30 +183,33 @@
             <option value="plucks">Plucks</option>
           </select>
         </form>
-        <form action="">
-          <legend>Format</legend>
-          <fieldset class="search__format">
-            <input type="radio" id="all" name="format" /><label for="all"
-              >All</label
+        <form class="search__format">
+          <fieldset>
+            <legend>Format:</legend>
+            <label for="all"
+              ><input type="radio" id="all" name="format" />All</label
             >
-            <input type="radio" id="presets-only" name="format" /><label
-              for="presets-only"
-              >Presets Only</label
+            <label for="presets-only"
+              ><input type="radio" id="presets-only" name="format" />Presets
+              Only</label
             >
-            <input type="radio" id="wavetables" name="format" /><label
-              for="wavetables"
-              >Wavetables</label
+            <label for="wavetables"
+              ><input
+                type="radio"
+                id="wavetables"
+                name="format"
+              />Wavetables</label
             >
           </fieldset>
         </form>
-        <form action="">
-          <fieldset class="search__price">
-            <legend>Price</legend>
-            <input type="radio" id="free" name="price" /><label for="free"
-              >Free</label
+        <form class="search__price">
+          <fieldset>
+            <legend>Price:</legend>
+            <label for="free">
+              <input type="radio" id="free" name="price" />Free</label
             >
-            <input type="radio" id="paid" name="price" /><label for="paid"
-              >Paid</label
+            <label for="paid"
+              ><input type="radio" id="paid" name="price" />Paid</label
             >
           </fieldset>
         </form>
@@ -333,8 +334,8 @@
       </nav>
       <ul class="footer__social-media-list">
         <li>
-          <a href="#"
-            ><svg
+          <a href="#">
+            <svg
               width="24"
               height="24"
               viewBox="0 0 6.3499999 6.35"
@@ -390,8 +391,8 @@
           </a>
         </li>
         <li>
-          <a href="#"
-            ><svg
+          <a href="#">
+            <svg
               width="24"
               height="24"
               viewBox="0 0 6.3499999 6.35"
@@ -447,8 +448,9 @@
           </a>
         </li>
         <li>
-          <a href="#"
-            ><svg
+          <a href="#">
+            <svg
+              class="icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
