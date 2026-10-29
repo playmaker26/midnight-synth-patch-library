@@ -704,6 +704,13 @@ footer {
     gap: 32px;
   }
 
+  main .results ul li article dl dt,
+  main .results ul li article dl dd {
+    font-size: var(--desktop-fs-base);
+    line-height: var(--desktop-lh-base);
+    letter-spacing: var(--desktop-ls-base);
+  }
+
   footer nav ul li a {
     font-size: var(--desktop-fs-footer);
     line-height: var(--desktop-lh-footer);
