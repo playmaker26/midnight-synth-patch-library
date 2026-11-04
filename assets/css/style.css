@@ -614,11 +614,6 @@ footer {
     color: var(--primary-color);
     fill: var(--accent-color);
   }
-
-  footer .footer__social-media-list li a .icon {
-    stroke: var(--accent-color);
-    color: var(--accent-color);
-  }
 }
 
 @media only screen and (min-width: 1200px) {
